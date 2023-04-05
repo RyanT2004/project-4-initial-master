@@ -88,8 +88,8 @@ public class GentlyDownTheStream {
         return integerValues.stream()
                 .sorted(Comparator.reverseOrder())
                 .distinct()
-                .limit(10)
                 .filter(i -> i % 2 != 0)
+                .limit(10)
                 .collect(Collectors.toList());
 
     }
